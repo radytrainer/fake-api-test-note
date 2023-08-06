@@ -46,3 +46,30 @@
 
 > `Photos: https://pixabay.com/api/?key=14001068-da63091f2a2cb98e1d7cc1d82&q=yellow+flowers&image_type=photo&pretty=true`
 
+### 4. Example using API with Axios
+`index.html`
+```html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    
+</body>
+</html>
+```
+`main.js`
+```js:
+const URL = "https://jsonplaceholder.typicode.com/users";
+
+axios.get(URL).then(function(response) {
+    console.log(response.data);
+})
+```
+`Response in console:`
+<img src="api.png">
