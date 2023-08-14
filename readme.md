@@ -48,7 +48,7 @@
 
 ### 4. Example using API with Axios
 `index.html`
-```html:
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,7 +64,7 @@
 </html>
 ```
 `main.js`
-```js:
+```js
 const URL = "https://jsonplaceholder.typicode.com/users";
 
 axios.get(URL).then(function(response) {
